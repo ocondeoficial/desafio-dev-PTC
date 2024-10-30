@@ -1,0 +1,275 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: lato;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 6%;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+.menu-bottons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    box-sizing: border-box;
+    margin-left: 12%;
+}
+
+.bottons {
+    display: inline-block;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 20px #959595;
+}
+
+.bottons:hover {
+    color: #fb6e00;
+    transform: scale(1.10);
+    transition: 0.3s;
+}
+
+hr {
+    background-image: linear-gradient(to right, orange, #fb6e00, orange);
+    height: 3px;
+    box-shadow: 1px 1px 10px #fb6e00;
+    border: none;
+}
+
+.presentation {
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.hello {
+    color: #959595;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#face-image {
+    width: 30%;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.container-about-me {
+    display: inline-block;
+    width: 30%;
+    height: 400px;
+    background-color: #1b1b1b;
+    border-radius: 30px;
+
+}
+
+.container-about-me:hover {
+    box-shadow: 1px 1px 30px #fb6e00;
+}
+
+.title-about-me {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.text-about-me {
+    margin: 0;
+    padding: 0;
+    padding: 5%;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: #959595;
+}
+
+.literally-me-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+    background-image: linear-gradient(to bottom, white, white, #959595);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 20px #959595;
+}
+
+.literally-me-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.frames {
+    margin: auto;
+    margin-bottom: 3%;
+    width: 70%;
+    height: 30rem;
+}
+
+.moments-text {
+    color: white;
+    background-image: linear-gradient(to bottom, white, white, #959595);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 4%;
+    text-shadow: 1px 1px 20px #959595;
+}
+
+.moments-container {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.moments-image {
+    width: 70%;
+}
+
+footer {
+    background-color: #1b1b1b;
+    height: 150px;
+    box-shadow: 1px 1px 3px #959595;
+}
+
+.text-footer {
+    text-align: center;
+    color: white;
+    font-size: 1.0rem;
+    line-height: 150px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1000px) {
+    .bottons {
+        font-size: 0.8rem;
+    }
+
+    #face-image {
+        width: 50%;
+    }
+
+    .title-about-me {
+        font-size: 1.4rem;
+        padding: 8%;
+    }
+
+    .text-about-me {
+        font-size: 1.0rem;
+    }
+
+    .name {
+        font-size: 2.2rem;
+
+    }
+
+    .hello {
+        font-size: 1.2rem;
+
+    }
+
+    .literally-me-title,
+    .moments-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bottons {
+        font-size: 0.6rem;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .hello {
+        font-size: 0.9rem;
+    }
+
+    #face-image {
+        width: 60%;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .container-about-me {
+        margin: auto;
+        width: 60%;
+        height: 20rem;
+        margin-bottom: 4%;
+    }
+
+    .title-about-me {
+        font-size: 1.5rem;
+    }
+
+    .text-about-me {
+        font-size: 1rem;
+    }
+
+    .literally-me-title,
+    .moments-text {
+        font-size: 1.3rem;
+    }
+
+    .text-footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bottons {
+        font-size: 0.5rem;
+
+    }
+
+    #face-image {
+        width: 80%;
+    }
+
+    .title-about-me {
+        font-size: 1.2rem;
+        padding: 10%;
+    }
+
+    .text-about-me {
+        font-size: 0.8rem;
+        padding: 8%;
+    }
+
+}
